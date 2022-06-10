@@ -55,7 +55,7 @@ func registerNacos() {
 			}
 			serverConfigs = append(serverConfigs, serverConfig)
 		}
-		logger.Debug("Nacos服务器配置: " + toJSON(serverConfig))
+		logger.Debug("Nacos服务器配置: " + toJSON(serverConfigs))
 		clientConfig := constant.ClientConfig{}
 		clientConfig.LogLevel = "error"
 		if conf.Exists("go.nacos.clientConfig.logLevel") {
