@@ -1,4 +1,4 @@
-module mgconf
+module github.com/maczh/mgconf
 
 go 1.17
 
